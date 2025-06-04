@@ -15,8 +15,13 @@ public class CorsGlobalFilter {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowedOrigins(List.of( "https://harshclinic-5smh.vercel.app"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-        config.setAllowedHeaders(Arrays.asList("*"));
-        config.setAllowCredentials(true);
+        // config.setAllowedHeaders(Arrays.asList("*"));
+        // config.setAllowCredentials(true);
+         config.setAllowedHeaders(List.of("*"));
+        config.setAllowCredentials(true); // Allow cookies
+        config.setMaxAge(3600L); // Cache pre-flight for 1 hour
+        // source.registerCorsConfiguration("/**", config);
+        // return new CorsFilter(source);
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", config);
