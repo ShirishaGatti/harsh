@@ -35,7 +35,6 @@ com\backend\harsh\service\PDFService.class
 com\backend\harsh\repository\PatientRepository.class
 com\backend\harsh\repository\ItemRepository.class
 com\backend\harsh\config\CorsGlobalFilter.class
-com\backend\harsh\config\SecurityConfig.class
 com\backend\harsh\repository\AdminRepository.class
 com\backend\harsh\entities\SelectedItems.class
 com\backend\harsh\serviceImpl\BillServiceImpl.class
