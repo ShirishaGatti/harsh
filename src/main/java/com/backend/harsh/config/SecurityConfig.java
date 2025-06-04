@@ -35,8 +35,8 @@ public class SecurityConfig {
             .csrf(csrf -> csrf.disable())
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers(HttpMethod.OPTIONS, "/admin/*").permitAll() // Permit OPTIONS for /tnp/admin/*
-                .requestMatchers("/admij/**").permitAll()  // Allows access to all Actuator endpoints
+                .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll() // Permit OPTIONS for /tnp/admin/*
+                .requestMatchers("/admin/**").permitAll()  // Allows access to all Actuator endpoints
                 .requestMatchers("/opd/**").permitAll()
                 .requestMatchers("/ipd/**").hasRole("STUDENT")
                 .requestMatchers("/consumedItems/**").hasRole("ADMIN")
