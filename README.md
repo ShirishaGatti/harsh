@@ -10,19 +10,6 @@ A real-world full-stack web application built to streamline patient management a
 
 ---
 
-## 🧾 Table of Contents
-
-- [💡 Overview](#-overview)
-- [🚀 Features](#-features)
-- [🧑‍💻 Tech Stack](#-tech-stack)
-- [📂 Folder Structure](#-folder-structure)
-- [⚙️ Setup Instructions](#️-setup-instructions)
-- [📸 Screenshots](#-screenshots)
-- [📈 Future Scope](#-future-scope)
-- [🙋‍♀️ Author](#-author)
-
----
-
 ## 💡 Overview
 
 **HarshClinic** is a complete clinic management system designed to manage patient registration, IPD/OPD workflows, billing, and admin functionalities. The application improves clinic productivity by digitizing patient records and reducing manual overhead.
@@ -57,7 +44,5 @@ A real-world full-stack web application built to streamline patient management a
 | **Database**| MySQL |
 | **Tools**   | Git, GitHub, Postman, Axios, VS Code, Eclipse |
 
----
 
-## 📂 Folder Structure
 
